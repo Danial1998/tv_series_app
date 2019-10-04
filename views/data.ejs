@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/data.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<!-- <img src=""> -->
+	<div class="container-fluid main">
+	<div class="row">
+		<div class="col-md-4 thumbnail">
+			<img src=<%= data["Poster"] %>>
+			<div class="catiop">
+				<h3 style="text-align: center">Type : <%=data["Type"]%></h3>
+			</div>
+		</div>
+		<div class="col-md-8">
+				<div style="margin-top: 4vh;" class="jumbotron container-fluid bg">
+				<h2>PLOT : </h2>
+				<p><h4><%=data["Plot"]%></h4></p>
+				</div>
+		</div>
+		<!-- <div class="col-md-4"></div> -->
+	</div >
+
+	<h2 class="text">IMDB Rating : <%=data["imdbRating"]%></h2>
+
+	<h3 class="text1">Date of Release : <%= data["Released"]%></h3>
+
+	<h3 class="text1">Genre : <%= data["Genre"]%></h3>
+
+	<p><h3 class="text1">Actors: <%= data["Actors"] %></h3></p>
+
+</div>
+
+</body>
+</html>
