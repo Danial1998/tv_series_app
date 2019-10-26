@@ -1,2 +1,1 @@
-# myhotel.com
-A website that contains reviews of Hotels given by users.
+A website that gives you information about any TV show or Movie that you search.
